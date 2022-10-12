@@ -35,10 +35,16 @@ public class Main {
 				//board list
 				case"1":
 					disp.showTitle("BOARD LIST");
+					for (int i = 0; i < posts.size(); i++) {
 
-					
+						System.out.print("[ no." + posts.get(i).no + "]");
+						System.out.print(" ");
+						System.out.print("title: " + posts.get(i).title + "/");
+						System.out.print(" ");
+						System.out.println("( " + posts.get(i).id + ")");
+					}
 					break;
-
+	
 
 				//Write
 				case"2":
